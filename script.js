@@ -47,6 +47,13 @@ var exerciseType = [
     {name: "Hand Stand Push-up", oneMinuteStandard: 5, unit: "rep"}
 ];
 
-function generateWOD() {
+document.querySelector("button").addEventListener("click", function() {
+    generateWOD();
+});
 
+function generateWOD() {
+    console.log(wodTypes[Math.floor(Math.random() * wodTypes.length) + 1]);
+    console.log(exerciseType[Math.floor(Math.random() * exerciseType.length) + 1]);
+    console.log(exerciseType[Math.floor(Math.random() * exerciseType.length) + 1]);
+    console.log(exerciseType[Math.floor(Math.random() * exerciseType.length) + 1]);
 };
